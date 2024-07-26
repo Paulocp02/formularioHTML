@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiantes 2024</title>
+    <style>
+        body {
+            background-color: navy;
+            color: white;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 300px;
+        }
+        form {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="Logo Mariano.svg" alt="Logo" width="100" height="auto">
+    </div>
+
+    <section>
+        <h1>Registro de estudiantes 2024</h1>
+    </section>
+
+    <main>
+        <h2>Rellene el formulario con sus datos personales</h2>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                </div>
+                <br>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <br>
+                <div>
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <br>
+                <div>
+                    <label for="departamento">Departamento</label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="">Seleccione un departamento</option>
+                        <option value="Alta Verapaz">Alta Verapaz</option>
+                        <option value="Baja Verapaz">Baja Verapaz</option>
+                        <option value="Chimaltenango">Chimaltenango</option>
+                        <option value="Chiquimula">Chiquimula</option>
+                        <option value="El Progreso">El Progreso</option>
+                        <option value="Escuintla">Escuintla</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Huehuetenango">Huehuetenango</option>
+                        <option value="Izabal">Izabal</option>
+                        <option value="Jalapa">Jalapa</option>
+                        <option value="Jutiapa">Jutiapa</option>
+                        <option value="Petén">Petén</option>
+                        <option value="Quetzaltenango">Quetzaltenango</option>
+                        <option value="Quiché">Quiché</option>
+                        <option value="Retalhuleu">Retalhuleu</option>
+                        <option value="Sacatepéquez">Sacatepéquez</option>
+                        <option value="San Marcos">San Marcos</option>
+                        <option value="Santa Rosa">Santa Rosa</option>
+                        <option value="Sololá">Sololá</option>
+                        <option value="Suchitepéquez">Suchitepéquez</option>
+                        <option value="Totonicapán">Totonicapán</option>
+                        <option value="Zacapa">Zacapa</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="municipio">Municipio</label>
+                    <input type="text" id="municipio" name="municipio" placeholder="Municipio" required>
+                </div>
+                <br>
+                <div>
+                    <label for="direccion">Calle/Casa/Apartamento</label> <br>
+                    <textarea id="direccion" name="direccion" rows="5" cols="50" placeholder="Ingrese su dirección" required></textarea>
+                </div>
+                <br>
+                <div align=" center">
+                    <input id="registrar" type="submit" value="Registrar" >
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <h3>Derechos Reservados</h3>
+    </footer>
+</body>
+</html>
